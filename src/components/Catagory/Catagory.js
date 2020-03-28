@@ -11,7 +11,7 @@ const Category = ({ title, item }) => {
 			</div>
 			<div className="items">
 				{item.slice(0, 4).map((x, i) => (
-					<Item item={x} />
+					<Item key={i} item={x} />
 				))}
 			</div>
 		</div>

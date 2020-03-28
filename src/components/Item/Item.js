@@ -11,7 +11,7 @@ const Item = ({ item, addItem }) => {
 			<div
 				className="item-bg"
 				style={{
-					backgroundImage: `url(${(item && item.img) ||
+					backgroundImage: `url(${(item && item.imageUrl) ||
 						(item && item.imageUrl)})`,
 					backgroundSize: "cover"
 				}}>

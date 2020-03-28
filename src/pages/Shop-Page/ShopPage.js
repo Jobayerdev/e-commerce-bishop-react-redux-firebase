@@ -1,17 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./shop-page.style.scss";
-import Category from "../../components/Catagory/Catagory";
-import SHOP_DATA from "./ShopData";
+import CollectionOverview from "../../components/colleaction-overview/CollectionOverview";
+import { Route } from "react-router-dom";
+import CollectionPage from "../collection-page/CollectionPage";
 
-const ShopPage = () => {
-	const [state] = useState(SHOP_DATA);
-	console.log(state);
-
+const ShopPage = ({ match }) => {
 	return (
 		<div className="shop-page">
-			{state.map((x, i) => (
-				<Category title={x.title} item={x.items} />
-			))}
+			<Route exact path={`${match.path}`} component={CollectionOverview} />
+			<Route path={`${match.path}/:collectionID`} component={CollectionPage} />
 		</div>
 	);
 };

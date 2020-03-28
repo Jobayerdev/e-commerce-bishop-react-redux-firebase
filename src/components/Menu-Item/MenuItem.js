@@ -1,18 +1,22 @@
 import React, { Fragment } from "react";
 import "./menuItem.style.scss";
+import { withRouter } from "react-router-dom";
 
-const MenuItem = ({ item }) => {
+const MenuItem = ({ item, history, match }) => {
+	const { img, name, linkUrl } = item;
 	return (
 		<Fragment>
-			<div className="menu-item">
+			<div
+				className="menu-item"
+				onClick={() => history.push(`${match.url}${linkUrl}`)}>
 				<div
 					className="background-img"
 					style={{
-						backgroundImage: `url(${item.img})`,
+						backgroundImage: `url(${img})`,
 						backgroundSize: `contain`
 					}}>
 					<div className="content">
-						<div className="title">{item.name}</div>
+						<div className="title">{name}</div>
 					</div>
 				</div>
 			</div>
@@ -20,4 +24,4 @@ const MenuItem = ({ item }) => {
 	);
 };
 
-export default MenuItem;
+export default withRouter(MenuItem);
