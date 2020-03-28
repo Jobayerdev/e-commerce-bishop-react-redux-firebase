@@ -2,7 +2,10 @@ import React from "react";
 import "./Item.style.scss";
 import CartIcon from "../Cart-Icon/CartIcon";
 
-const Item = ({ item }) => {
+import { connect } from "react-redux";
+import { addItemToCart } from "../../redux/cart/cart.actions";
+
+const Item = ({ item, addItem }) => {
 	return (
 		<div className="item">
 			<div
@@ -17,7 +20,7 @@ const Item = ({ item }) => {
 				</h2>
 				<div className="item-footer">
 					<div className="price">{item && item.price}</div>
-					<div className="cart">
+					<div className="cart" onClick={() => addItem(item)}>
 						<CartIcon plusIcon />
 					</div>
 				</div>
@@ -26,4 +29,8 @@ const Item = ({ item }) => {
 	);
 };
 
-export default Item;
+const mapDispatchToProps = (dispatch) => ({
+	addItem: (item) => dispatch(addItemToCart(item))
+});
+
+export default connect(null, mapDispatchToProps)(Item);

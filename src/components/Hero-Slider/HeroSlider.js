@@ -12,7 +12,7 @@ const HeroSlider = () => {
 			catagory: "Home",
 			img:
 				"https://cdn.shopify.com/s/files/1/0233/5133/products/product.f4.a.png?v=1574226660",
-			price: "$90",
+			price: "90",
 			Links: "/shop"
 		},
 		{
@@ -20,7 +20,7 @@ const HeroSlider = () => {
 			name: "Boskke Cube",
 			catagory: "Home",
 			img: "https://www.pngkit.com/png/full/288-2886511_monstera-leaf-png.png",
-			price: "$90",
+			price: "90",
 			Links: "/shop"
 		}
 	];

@@ -12,7 +12,7 @@ const TopCollection = () => {
 			catagory: "Home",
 			img:
 				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_088_boskee_cube_3-1340x7851.jpg",
-			price: "$90"
+			price: "90"
 		},
 		{
 			id: 2,
@@ -20,7 +20,7 @@ const TopCollection = () => {
 			catagory: "Home",
 			img:
 				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_061_cast_iron_birds_1-1340x7851.jpg",
-			price: "$90"
+			price: "90"
 		},
 		{
 			id: 3,
@@ -28,7 +28,7 @@ const TopCollection = () => {
 			catagory: "Home",
 			img:
 				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_086_tina_frey_hanging_planter_1-1340x7851.jpg",
-			price: "$90"
+			price: "90"
 		},
 		{
 			id: 4,
@@ -36,7 +36,7 @@ const TopCollection = () => {
 			catagory: "Home",
 			img:
 				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_104_nourished_journal_1-1340x7851.jpg",
-			price: "$90"
+			price: "90"
 		},
 		{
 			id: 5,
@@ -44,7 +44,7 @@ const TopCollection = () => {
 			catagory: "Home",
 			img:
 				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_088_boskee_cube_3-1340x7851.jpg",
-			price: "$90"
+			price: "90"
 		},
 		{
 			id: 6,
@@ -52,7 +52,7 @@ const TopCollection = () => {
 			catagory: "Home",
 			img:
 				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_088_boskee_cube_3-1340x7851.jpg",
-			price: "$90"
+			price: "90"
 		}
 	];
 	const [state] = useState(ProductData);
