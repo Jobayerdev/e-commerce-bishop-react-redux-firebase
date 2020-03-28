@@ -52,5 +52,3 @@ const mapStateToProps = createStructuredSelector({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);
-
-// style={{ position: "sticky", top: 0, background: "#fff", zIndex: 9999 }}

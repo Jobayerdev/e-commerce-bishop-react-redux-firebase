@@ -56,7 +56,7 @@ const SignUp = () => {
 				/>
 				<FormInput
 					type="email"
-					placeholder="Last name"
+					placeholder="Email"
 					onChange={(e) => onChangeHandler(e)}
 					name="email"
 					value={formData.email}

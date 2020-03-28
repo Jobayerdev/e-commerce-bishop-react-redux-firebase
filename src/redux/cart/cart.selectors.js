@@ -8,6 +8,14 @@ export const selectCartItems = createSelector(
 	(cart) => cart.cartItems
 );
 
+//GET CARTITEMS QUANTITY SUMC
+export const selectCartItemsQuantity = createSelector([selectState], (cart) =>
+	cart.cartItems.reduce(
+		(accumulateTotal, currentTotal) => accumulateTotal + currentTotal.quantity,
+		0
+	)
+);
+
 //TOGGLE CART
 export const selectToggleHidden = createSelector(
 	[selectState],

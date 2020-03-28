@@ -1,5 +1,5 @@
 export const addItemUtils = (cartItems, addItem) => {
-	const existingItem = cartItems.find((x) => x.id == addItem.id);
+	const existingItem = cartItems.find((x) => x.id === addItem.id);
 
 	if (existingItem) {
 		return cartItems.map((x) =>
