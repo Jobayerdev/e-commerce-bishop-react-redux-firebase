@@ -7,52 +7,46 @@ const LatestItem = () => {
 	const ProductData = [
 		{
 			id: 1,
-			name: "Boskke Cube",
+			name: "Brown Brim",
 			catagory: "Home",
-			imageUrl:
-				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_088_boskee_cube_3-1340x7851.jpg",
-			price: "90"
+			imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+			price: "90",
 		},
 		{
 			id: 2,
-			name: "Boskke Cube",
+			name: "Adidas NMD",
 			catagory: "Home",
-			imageUrl:
-				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_061_cast_iron_birds_1-1340x7851.jpg",
-			price: "90"
+			imageUrl: "https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png",
+			price: "90",
 		},
 		{
 			id: 3,
-			name: "Boskke Cube",
+			name: "Crwo Byr",
 			catagory: "Home",
-			imageUrl:
-				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_086_tina_frey_hanging_planter_1-1340x7851.jpg",
-			price: "90"
+			imageUrl: "https://i.ibb.co/0s3pdnc/adidas-nmd.png",
+			price: "65",
 		},
 		{
 			id: 4,
-			name: "Boskke Cube",
+			name: "Black Jean Shearling",
 			catagory: "Home",
-			imageUrl:
-				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_104_nourished_journal_1-1340x7851.jpg",
-			price: "90"
+			imageUrl: "https://i.ibb.co/XzcwL5s/black-shearling.png",
+			price: "70",
 		},
 		{
 			id: 5,
-			name: "Boskke Cube",
+			name: "Blue Tanktop",
 			catagory: "Home",
-			imageUrl:
-				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_088_boskee_cube_3-1340x7851.jpg",
-			price: "90"
+			imageUrl: "https://i.ibb.co/7CQVJNm/blue-tank.png",
+			price: "40",
 		},
 		{
 			id: 6,
-			name: "Boskke Cube",
+			name: "Camo Down Vest",
 			catagory: "Home",
-			imageUrl:
-				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_088_boskee_cube_3-1340x7851.jpg",
-			price: "90"
-		}
+			imageUrl: "https://i.ibb.co/xJS0T3Y/camo-vest.png",
+			price: "50",
+		},
 	];
 	const [state] = useState(ProductData);
 	return (

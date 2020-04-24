@@ -18,7 +18,6 @@ import CheckoutPage from "./pages/checkout-page/CheckoutPage";
 
 class App extends Component {
 	unsubscribeFromAuth = null;
-
 	componentDidMount() {
 		const { setCurrentUser } = this.props;
 		this.unsubscribeFromAuth = auth.onAuthStateChanged(async (user) => {
@@ -27,7 +26,7 @@ class App extends Component {
 				userRef.onSnapshot((snapShot) => {
 					setCurrentUser({
 						id: snapShot.id,
-						...snapShot.data()
+						...snapShot.data(),
 					});
 				});
 			} else {
@@ -61,11 +60,11 @@ class App extends Component {
 }
 
 const mapStateToProps = ({ user }) => ({
-	currentUser: user.currentUser
+	currentUser: user.currentUser,
 });
 
 const mapDispatchToProps = (dispatch) => ({
-	setCurrentUser: (user) => dispatch(setCurrentUser(user))
+	setCurrentUser: (user) => dispatch(setCurrentUser(user)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

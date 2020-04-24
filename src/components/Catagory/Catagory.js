@@ -7,7 +7,6 @@ const Category = ({ title, item }) => {
 		<div className="category-item">
 			<div className="title">
 				<h1>{title}</h1>
-				<span>See More</span>
 			</div>
 			<div className="items">
 				{item.slice(0, 4).map((x, i) => (

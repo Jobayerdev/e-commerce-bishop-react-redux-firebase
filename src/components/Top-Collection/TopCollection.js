@@ -7,58 +7,52 @@ import "react-multi-carousel/lib/styles.css";
 const TopCollection = () => {
 	const ProductData = [
 		{
-			id: 1,
-			name: "Boskke Cube",
+			id: 102,
+			name: "Blue Beanie",
 			catagory: "Home",
-			img:
-				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_088_boskee_cube_3-1340x7851.jpg",
-			price: "90"
+			imageUrl: "https://i.ibb.co/ypkgK0X/blue-beanie.png",
+			price: "70",
 		},
 		{
-			id: 2,
-			name: "Boskke Cube",
+			id: 1092,
+			name: "Adidas Yeezy",
 			catagory: "Home",
-			img:
-				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_061_cast_iron_birds_1-1340x7851.jpg",
-			price: "90"
+			imageUrl: "https://i.ibb.co/mh3VM1f/polka-dot-shirt.png",
+			price: "50",
 		},
 		{
-			id: 3,
-			name: "Boskke Cube",
+			id: 3213,
+			name: "Blue Jean Jacket",
 			catagory: "Home",
-			img:
-				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_086_tina_frey_hanging_planter_1-1340x7851.jpg",
-			price: "90"
+			imageUrl: "https://i.ibb.co/mJS6vz0/blue-jean-jacket.png",
+			price: "80",
 		},
 		{
-			id: 4,
-			name: "Boskke Cube",
+			id: 3214,
+			name: "Floral Blouse",
 			catagory: "Home",
-			img:
-				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_104_nourished_journal_1-1340x7851.jpg",
-			price: "90"
+			imageUrl: "https://i.ibb.co/4W2DGKm/floral-blouse.png",
+			price: "90",
 		},
 		{
-			id: 5,
-			name: "Boskke Cube",
+			id: 3125,
+			name: "Pink T-shirt",
 			catagory: "Home",
-			img:
-				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_088_boskee_cube_3-1340x7851.jpg",
-			price: "90"
+			imageUrl: "https://i.ibb.co/RvwnBL8/pink-shirt.png",
+			price: "40",
 		},
 		{
-			id: 6,
-			name: "Boskke Cube",
+			id: 3216,
+			name: "White Blouse",
 			catagory: "Home",
-			img:
-				"https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/yes_088_boskee_cube_3-1340x7851.jpg",
-			price: "90"
-		}
+			imageUrl: "https://i.ibb.co/qBcrsJg/white-vest.png",
+			price: "90",
+		},
 	];
 	const [state] = useState(ProductData);
 	return (
 		<div className="top-collection">
-			<SectionTitle inverse>Home Collection</SectionTitle>
+			<SectionTitle inverse>Top Collection</SectionTitle>
 			<Carousel
 				additionalTransfrom={0}
 				arrows={false}
@@ -81,27 +75,27 @@ const TopCollection = () => {
 					desktop: {
 						breakpoint: {
 							max: 3000,
-							min: 1024
+							min: 1024,
 						},
 						items: 4,
-						partialVisibilityGutter: 40
+						partialVisibilityGutter: 40,
 					},
 					mobile: {
 						breakpoint: {
 							max: 464,
-							min: 0
+							min: 0,
 						},
 						items: 1,
-						partialVisibilityGutter: 30
+						partialVisibilityGutter: 30,
 					},
 					tablet: {
 						breakpoint: {
 							max: 1024,
-							min: 464
+							min: 464,
 						},
 						items: 2,
-						partialVisibilityGutter: 30
-					}
+						partialVisibilityGutter: 30,
+					},
 				}}
 				showDots={false}
 				sliderClass=""
@@ -114,4 +108,5 @@ const TopCollection = () => {
 		</div>
 	);
 };
+
 export default TopCollection;

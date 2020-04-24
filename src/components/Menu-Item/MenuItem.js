@@ -13,7 +13,7 @@ const MenuItem = ({ item, history, match }) => {
 					className="background-img"
 					style={{
 						backgroundImage: `url(${img})`,
-						backgroundSize: `contain`
+						backgroundSize: `cover`,
 					}}>
 					<div className="content">
 						<div className="title">{name}</div>

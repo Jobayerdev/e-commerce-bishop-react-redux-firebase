@@ -8,21 +8,18 @@ const HeroSlider = () => {
 	const ProductData = [
 		{
 			id: 1,
-			name: "Boskke Cube",
-			catagory: "Home",
+			name: "Ladies Items",
 			img:
-				"https://cdn.shopify.com/s/files/1/0233/5133/products/product.f4.a.png?v=1574226660",
-			price: "90",
-			Links: "/shop"
+				"https://i.ibb.co/jvgQtt7/beautiful-young-woman-showing-pointing-white-background-1301-7232-removebg-preview.png",
+			discount: "70",
 		},
 		{
 			id: 1,
-			name: "Boskke Cube",
-			catagory: "Home",
-			img: "https://www.pngkit.com/png/full/288-2886511_monstera-leaf-png.png",
-			price: "90",
-			Links: "/shop"
-		}
+			name: "Fancy Hat's",
+			img:
+				"https://i.ibb.co/CnLjhM5/b3567ac85fb975b278a17ccda201486e-removebg-preview.png",
+			discount: "55",
+		},
 	];
 	const [state] = useState(ProductData);
 	return (
@@ -32,7 +29,7 @@ const HeroSlider = () => {
 				backgroundImage: `url('https://demokaliumsites-laborator.netdna-ssl.com/shop/wp-content/uploads/2015/05/pattern.png)`,
 				backgroundSize: "cover",
 				backgroundRepeat: "noRepeat",
-				height: "550px"
+				height: "550px",
 			}}>
 			<Carousel
 				additionalTransfrom={0}
@@ -56,27 +53,27 @@ const HeroSlider = () => {
 					desktop: {
 						breakpoint: {
 							max: 3000,
-							min: 1024
+							min: 1024,
 						},
 						items: 1,
-						partialVisibilityGutter: 40
+						partialVisibilityGutter: 40,
 					},
 					mobile: {
 						breakpoint: {
 							max: 464,
-							min: 0
+							min: 0,
 						},
 						items: 1,
-						partialVisibilityGutter: 30
+						partialVisibilityGutter: 30,
 					},
 					tablet: {
 						breakpoint: {
 							max: 1024,
-							min: 464
+							min: 464,
 						},
 						items: 1,
-						partialVisibilityGutter: 30
-					}
+						partialVisibilityGutter: 30,
+					},
 				}}
 				showDots={false}
 				sliderClass=""
